@@ -13,8 +13,8 @@ public void setup()
 //	smooth();
 long epoch = 1498230903;
 long now = System.currentTimeMillis();
-//String date = new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new java.util.Date(epoch*1000));
-println(now);	
+String date = new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new java.util.Date(now));
+println(date);	
   GetRequest get = new GetRequest("http://api.open-notify.org/iss-pass.json?lat=54.978301&lon=-1.587802");
   get.send(); // program will wait untill the request is completed
   println("response: " + get.getContent());
