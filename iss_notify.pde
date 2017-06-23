@@ -1,6 +1,8 @@
 //using json get as an example, pointing at iss-pass
 //using info from https://stackoverflow.com/questions/25781652/converting-epoch-time-stamp-to-readable-date-not-working
 //http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true
+// to do count down timer , print times of the passes in human readable. 
+// switch on gps locations  
 
 import http.requests.*;
 import java.text.SimpleDateFormat.*; 
@@ -26,7 +28,7 @@ println(date);
   println("risetimes ");
   for(int i=0;i<passes.size();i++) {
     JSONObject rise = passes.getJSONObject(i);//gets each of the passes[duration and risetime]
-    println(rise);
+    //println(rise);
    // String date = new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new java.util.Date(rise*1000));
    println("risetime: " + rise.getInt("risetime"));
    println("duration: " + rise.getInt("duration"));
