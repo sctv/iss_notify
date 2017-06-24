@@ -1,7 +1,8 @@
 //using json get as an example, pointing at iss-pass
 //using info from https://stackoverflow.com/questions/25781652/converting-epoch-time-stamp-to-readable-date-not-working
 //http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true
-// to do count down timer , print times of the passes in human readable. 
+// to do count down timer , 
+//print times of the passes in human readable - done 
 // switch on gps locations  
 
 import http.requests.*;
